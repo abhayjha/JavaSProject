@@ -14,9 +14,6 @@ public class Lab14A {
 			tx=session.beginTransaction();
 			Customer cust=new Customer("ab","jha","ab@jlc","9876");
 			session.save(cust);
-			Address add=new Address("mathikere","Blore","Karnataka");
-			session.save(add);
-			cust.setAddress(add);
 			tx.commit();
 			session.close();
 			System.out.println("Record Inserted");
